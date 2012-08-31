@@ -155,7 +155,7 @@ if [ -f $1 ]; then
 fi
 
 mkdir data
-curl http://twoswarm.cs.washington.edu:31337/?djaangM4v=mevivaeidethea > data/tmplog
+wget -O data/tmplog http://twoswarm.cs.washington.edu:31337/?djaangM4v=mevivaeidethea
 echo curled
 python change_timestamp_format.py data/tmplog > data/pl_log.txt
 echo timestampformatchanged
