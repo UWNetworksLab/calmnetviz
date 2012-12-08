@@ -1,3 +1,23 @@
+/*
+* This experiment expects a TorArgs.ini file present in the main directory, with the following format:
+Absolute directory.					Contains the visualizer data. (.viz)
+Type of packets to display.			ICMP | UDP | WEB | ALL
+Start time.							format: YY_MM_DD-HR:MI:SE
+End time.							format: YY_MM_DD-HR:MI:SE
+Approx time scale.					Integer, in seconds / 24 hours of data. x > 144 is preferable.
+Maximum ICMP/UDP response time |
+	successful packets per 100.		Integer, in ms | or 100 packets. Reached ICMP/UDP packets scale to this linearly.
+Maximum WEB response time.			Integer, in sec. Reached WEB packets scale to this linearly.
+
+Example:
+/home/preston/Documents/viz/
+ALL
+12_08_12-00:00:00
+12_08_13-00:00:00
+15
+2000
+15
+*/
 package com.p2pbr.netviz;
 
 import processing.core.*;

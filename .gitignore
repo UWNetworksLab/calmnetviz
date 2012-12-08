@@ -4,3 +4,4 @@ target
 .*
 lib/libjpcap.so
 lib/libjpcap.jnilib
+TorArgs.ini
